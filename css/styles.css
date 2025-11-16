@@ -1,0 +1,125 @@
+body {
+  background: rgb(255, 255, 255);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(113, 189, 200, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(113, 189, 200, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(113, 189, 200, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#71bdc8",GradientType=1);
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Rock Salt", cursive;
+}
+
+main {
+  padding: 25px 15px 0 15px;
+}
+
+input {
+  height: 30px;
+  width: 50px;
+}
+
+#info {
+  height: 25px;
+  color: #e11e19;
+  overflow: hidden;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tachado {
+  text-decoration: line-through;
+  color: red;
+}
+
+.price {
+  background-color: lightgray;
+  border: 2px solid;
+  border-radius: 5px;
+  position: fixed;
+  left: 61%;
+  top: 87%;
+}
+
+button {
+  padding: 0px 30px;
+  background-color: lightseagreen;
+  color: white;
+  border-color: whitesmoke;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#tachar {
+  font-size: 14px;
+  text-align: center;
+}
+
+.nuev-art {
+  align-self: center;
+}
+
+.articulos {
+  border: 1px dashed;
+  border-radius: 1em;
+}
+
+table,
+th,
+td,
+tr {
+  width: 100%;
+  border: 1px solid;
+  font-family: "Swanky and Moo Moo", cursive;
+  font-size: 18px;
+  padding-left: 15px;
+  background-color: lemonchiffon;
+}
+
+th {
+  background-color: goldenrod;
+}
+
+#oculta,
+#reload {
+  opacity: 0;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s; /* Safari */
+}
+
+.fija {
+  position: fixed;
+}
+
+footer {
+  opacity: 0;
+  transition: opacity 4s;
+  -webkit-transition: opacity 4s; /* Safari */
+  margin-top: 45px;
+  text-align: center;
+  font-size: 14px;
+  background-color: navy;
+  color: white;
+}
+
+a {
+  color: lemonchiffon;
+}
+
+a:active {
+  color: lightskyblue;
+}

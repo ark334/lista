@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lista de la compra</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap" rel="stylesheet">
+</head>
+
+<body class="col-xl-6">
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <main>
+        <h2 class="text-center">LISTA DE LA COMPRA</h2>
+        <section class="articulos my-4">
+            <h6 class="text-center mt-2">Toca en el artículo para añadirlo a la lista, o añade uno nuevo en la casilla de abajo</h6>
+            <hr>
+            <div>
+                <ul>
+                    <img src="./img/leche2.png" onclick="addArt('leche')" width="7%" alt="leche">
+                    <img src="./img/agua2.png" onclick="addArt('agua')" width="8%" alt="agua">
+                    <img src="./img/pan.png" onclick="addArt('pan')" width="12%" alt="pan">
+                    <img src="./img/huevos.png" onclick="addArt('huevos')" width="12%" alt="huevos">
+                    <img src="./img/carne.png" onclick="addArt('carne')" width="15%" alt="carne">
+                    <img src="./img/pescado.png" onclick="addArt('pescado')" width="15%" alt="pescado">
+                    <img src="./img/papas.png" onclick="addArt('papas')" width="15%" alt="papas">
+            
+                </ul>
+                <ul style="margin-top: -15px; margin-left: -15px;">
+                    <img src="./img/frutas.png" onclick="addArt('frutas')" width="15%" alt="frutas">
+                    <img src="./img/queso.png" onclick="addArt('queso')" width="11%" alt="queso">
+                    <img src="./img/yogures.png" onclick="addArt('yogures')" width="15%" alt="yogures">
+                    <img src="./img/aceite.png" onclick="addArt('aceite')" width="7%" alt="aceite">
+                    <img src="./img/arroz.png" onclick="addArt('arroz')" width="10%" alt="arroz">
+                    <img src="./img/sal.png" onclick="addArt('sal/azucar')" width="12%" alt="sal y azucar">
+                    <img src="./img/deter.png" onclick="addArt('detergente/suavizante')" width="8%" alt="detergente y suavizante">
+                    <img src="./img/rollo.png" onclick="addArt('rollo cocina/baño')" width="10%" alt="rollo cocina y baño">
+                </ul>
+            </div>
+        </section>
+        <div class="d-flex justify-content-center mt-3">
+            <p style="margin-right: 20px;">Precio</p>
+            <input id="precio" type="number"></input> €
+        </div>
+        <div class="d-flex">
+            <p class="col-6" style="margin-right: 20px; font-size: 13px">Añade un nuevo artículo en
+                la derecha, y el precio en la casilla de arriba (opcional)</p>
+            <input class="nuev-art col-5" id="nuevo-articulo"></input>
+        </div>
+        <div class="d-flex justify-content-around">
+            <button id="reload" onclick="location.reload()">Limpiar lista</button>
+            <button onclick="add2()">Añadir</button>
+        </div>
+        <p id="info" class="text-center mt-3"></p>
+        <section id="oculta" class="col-lg-6" style="margin: 0 auto">
+            <p id="tachar">Toca encima de un artículo para tacharlo</p>
+            <table id="lista" class="my-3">
+                <tr>
+                    <th class="text-center">Artículo</th>
+                    <th style="padding-left: 0">Precio</th>
+                </tr>
+            </table>
+            <div id="price" class="price text-center col-5">Precio total: <span id="total"></span></div>
+        </section>
+        <script src="app.js" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+        </script>
+    </main>
+
+    <footer id="footer">
+        <p>
+            <a href="mailto:arcadio@arcadioram.es?subject=App-lista-compra">Toca aquí si ves errores, o tienes alguna sugerencia</a>
+        </p>
+        <div style="margin-top: -10px; font-size: 16px;">Arcadio Ramírez - 2022</div>
+    </footer>
+
+</body>
+
+</html>
